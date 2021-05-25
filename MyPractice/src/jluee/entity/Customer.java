@@ -19,7 +19,7 @@ public class Customer implements Serializable {
 	private int id;
 	private String name;
 	@OneToMany(cascade = { CascadeType.ALL },mappedBy="customer")
-	private Collection<Order> orders= new  ArrayList<Order>();
+	private Collection<Orders> orders= new  ArrayList<Orders>();
 	public Customer() {
 	}
 	public String getName() {
@@ -34,10 +34,10 @@ public class Customer implements Serializable {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public Collection<Order> getOrders() {
+	public Collection<Orders> getOrders() {
 		return orders;
 	}
-	public void setOrders(Collection<Order> orders) {
+	public void setOrders(Collection<Orders> orders) {
 		this.orders = orders;
 	}
 }

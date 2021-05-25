@@ -18,7 +18,8 @@ public class Address implements Serializable {
 	private int id;
 	
 	@OneToOne(mappedBy = "address")
-	private Student student;private String province;
+	private Student student;
+	private String province;
 	private String city;
 	private String zip;
 

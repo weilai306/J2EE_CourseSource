@@ -6,14 +6,6 @@
 		<class>jluee.entity.Student</class>
 		<class>jluee.entity.Customer</class>
 		<class>jluee.entity.Goods</class>
-		<class>jluee.entity.Order</class>
-	</persistence-unit>
-	<persistence-unit name="MyPractice2"  transaction-type="JTA">
-		<jta-data-source>java:jboss/datasources/MySqlJpa2</jta-data-source>
-		<class>jluee.entity.Address</class>
-		<class>jluee.entity.Student</class>
-		<class>jluee.entity.Customer</class>
-		<class>jluee.entity.Goods</class>
-		<class>jluee.entity.Order</class>
+		<class>jluee.entity.Orders</class>
 	</persistence-unit>
 </persistence>

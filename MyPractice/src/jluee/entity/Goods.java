@@ -21,7 +21,7 @@ public class Goods implements Serializable {
 	private int id;
 	private int price;
 	@OneToMany(cascade = { CascadeType.ALL },mappedBy="goods")
-	private Collection<Order> orders= new  ArrayList<Order>();
+	private Collection<Orders> orders= new  ArrayList<Orders>();
 
 	public Goods() {
 	}
@@ -42,11 +42,11 @@ public class Goods implements Serializable {
 		this.id = id;
 	}
 
-	public Collection<Order> getOrders() {
+	public Collection<Orders> getOrders() {
 		return orders;
 	}
 
-	public void setOrders(Collection<Order> orders) {
+	public void setOrders(Collection<Orders> orders) {
 		this.orders = orders;
 	}
 
